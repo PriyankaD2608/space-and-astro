@@ -1,4 +1,4 @@
-# project1
+# space and astro
  Solar System & Astrology Project
 
  Project Overview
