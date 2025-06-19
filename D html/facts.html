@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Knowledge</title>
+    <style>
+        body {
+            background-color: #0b0c1d;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            width: 80%;
+        }
+
+        .title {
+            background-color: #222;
+            padding: 15px 30px;
+            border-radius: 10px;
+            display: inline-block;
+            font-size: 28px;
+            font-weight: bold;
+            box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.3);
+        }
+
+        .facts-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .fact {
+            background-color: #1e1f3b;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .fact:hover {
+            transform: scale(1.05);
+            background-color: #292a4f;
+        }
+
+        footer {
+            margin-top: 30px;
+            text-align: right;
+            width: 100%;
+            padding-right: 20px;
+        }
+
+        .return-btn {
+            background-color: #ff9800;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .return-btn:hover {
+            background-color: #e68900;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Cosmic Knowledge</h1>
+
+        <div class="facts-grid">
+            <div class="fact">The universe is approximately 13.8 billion years old.</div>
+            <div class="fact">A day on Venus is longer than its year.</div>
+            <div class="fact">Neutron stars are so dense that a sugar-cube-sized amount would weigh billions of tons.</div>
+            <div class="fact">There’s a giant cloud of alcohol in space near the center of the Milky Way.</div>
+            <div class="fact">A spoonful of a neutron star weighs about a billion tons.</div>
+            <div class="fact">Saturn’s moon Titan has lakes of liquid methane and ethane.</div>
+            <div class="fact">There are more stars in the universe than grains of sand on all Earth’s beaches.</div>
+            <div class="fact">The coldest place in the universe is the Boomerang Nebula, at -457.7°F (-272°C).</div>
+            <div class="fact">Black holes can slow down time due to extreme gravitational pull.</div>
+            <div class="fact">Some exoplanets may have diamond rain due to extreme pressures.</div>
+        </div>
+
+        <footer>
+            <button class="return-btn">Return to Main Page</button>
+        </footer>
+    </div>
+</body>
+</html>
