@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Expedition</title>
+    <style>
+    * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0e0b16; 
+    color: #f1f1f1; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.heading {
+    background-color: #ff6f61; 
+    color: white;
+    padding: 20px;
+    margin-top: 50px;
+    border: 3px solid #d04e3f; 
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    width: 80%;
+}
+
+.gallery-container {
+    width: 1400px;
+    height: 600px;
+    background: #1f1f2e; 
+    border: 3px solid #2d2d3b; 
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+.gallery img {
+    width: 300px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+    transform: scale(1.05); 
+}
+
+
+.description {
+    margin: 20px 0;
+    max-width: 80%;
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    color: #f1f1f1;
+    line-height: 1.5;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Space Missions Table */
+.space-missions {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.space-missions th, .space-missions td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.space-missions th {
+    background-color: #2d2d3b; 
+    color: #ff6f61; 
+}
+
+.space-missions tr:nth-child(even) {
+    background-color: #5f2b5c; 
+}
+
+.space-missions tr:nth-child(odd) {
+    background-color: #3a2e47;
+}
+
+/* Footer Section */
+.footer {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.footer button {
+    background-color: #ff6f61; 
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid #d04e3f;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.footer button:hover {
+    background-color: #d04e3f; 
+    color: white;
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="heading">Cosmic Expedition</div>
+
+    <!-- Gallery Section -->
+    <div class="gallery-container">
+        <div class="gallery">
+            <img src="expoone.jpg" alt="Image 1">
+            <img src="expotwo.jpg" alt="Image 2">
+            <img src="expothree.jpg" alt="Image 3">
+            <img src="expofour.jpg" alt="Image 4">
+            <img src="expofive.jpg" alt="Image 5">
+            <img src="exposix.jpg" alt="Image 6">
+            <img src="exposeven.jpg" alt="Image 7">
+            <img src="expoeight.jpg" alt="Image 8">
+            <img src="expoten.jpg" alt="Image 9">
+            <img src="exponine.jpg" alt="Image 10">
+        </div>
+    </div>
+
+    <table class="space-missions">
+
+        <thead>
+          <tr>
+            <th>Mission Name</th>
+            <th>Launch Year</th>
+            <th>Agency</th>
+            <th>Key Achievement</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            
+          <tr>
+            <td>Apollo 11</td>
+            <td>1969</td>
+            <td>NASA</td>
+            <td>First human moon landing</td>
+          </tr>
+          <tr>
+            <td>Voyager 1</td>
+            <td>1977</td>
+            <td>NASA</td>
+            <td>First spacecraft in interstellar space</td>
+          </tr>
+          <tr>
+            <td>Hubble Space Telescope</td>
+            <td>1990</td>
+            <td>NASA/ESA</td>
+            <td>Revolutionized space observation</td>
+          </tr>
+          <tr>
+            <td>Mars Rover Perseverance</td>
+            <td>2020</td>
+            <td>NASA</td>
+            <td>Searching for signs of past life on Mars</td>
+          </tr>
+          <tr>
+            <td>Chandrayaan-3</td>
+            <td>2023</td>
+            <td>ISRO</td>
+            <td>First successful soft landing near the Moon's south pole</td>
+          </tr>
+        </tbody>
+      </table>
+      
+
+    <div class="footer">
+        <button onclick="location.href='index.html'">Return to Main Page</button>
+    </div>
+
+</body>
+</html>

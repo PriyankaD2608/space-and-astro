@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celestial Events of Cosmos</title>
+    <style>
+    * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1b1f3b; /* Dark space-themed background */
+    color: #f0f0f0; /* Light text for contrast */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.heading {
+    background-color: #ff7b00; /* Bright orange */
+    color: #fff;
+    padding: 20px;
+    margin-top: 50px;
+    border: 3px solid #ff4f00; /* Darker orange for border */
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    width: 80%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.gallery-container {
+    width: 1400px;
+    height: 600px;
+    background: #2c2f44; /* Darker background for gallery */
+    border: 3px solid #444;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+.gallery img {
+    width: 300px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #fff; /* White border around images */
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.description {
+    margin: 20px 0;
+    max-width: 80%;
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent dark background for description */
+    border-radius: 10px;
+    color: #d1d1d1; /* Light gray text */
+    line-height: 1.5;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.footer {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.footer button {
+    background-color: #ff7b00; /* Warm orange button */
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid #ff4f00;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.footer button:hover {
+    background-color: #ff4f00; /* Darker orange on hover */
+    color: white;
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- Heading Section -->
+    <div class="heading">Celestial Events of Cosmos</div>
+
+    <!-- Gallery Section -->
+    <div class="gallery-container">
+        <div class="gallery">
+            <img src="eventsone.jpg" alt="Image 1">
+            <img src="eventstwo.jpg" alt="Image 2">
+            <img src="eventsthree.jpg" alt="Image 3">
+            <img src="eventsfour.jpg" alt="Image 4">
+            <img src="eventsfive.jpg" alt="Image 5">
+            <img src="eventsten.jpg" alt="Image 6">
+            <img src="eventssix.jpg" alt="Image 7">
+            <img src="eventsseven" alt="Image 8">
+            <img src="eventseight.jpg" alt="Image 9">
+            <img src="eventsnine.jpg" alt="Image 10">
+        </div>
+    </div>
+
+    <div class="description">
+        The universe is an endless expanse of wonder, filled with celestial objects that inspire awe and curiosity. From breathtaking star clusters to mysterious black holes, our cosmos holds secrets waiting to be unraveled. The images in this gallery showcase the beauty of nebulae, galaxies, and cosmic phenomena that light up the night sky. Explore the intricate dance of planets, witness the splendor of supernovae, and journey through the vastness of space. Every star tells a story, and each planet holds mysteries beyond our understanding. Let this visual voyage take you to the edges of the known universe and beyond, where imagination meets reality.
+    </div>
+
+    <div class="footer">
+        <button onclick="location.href='index.html'">Return to Main Page</button>
+    </div>
+
+</body>
+</html>
